@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SubForm</class>
+ <widget class="QWidget" name="SubForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>736</width>
+    <height>265</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>20</y>
+     <width>640</width>
+     <height>230</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#groupBox{
+
+background-image: url(:/new/prefix/groupbox3.jpg);
+}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>90</y>
+      <width>109</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;楷体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>订阅喷灌机列表:</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>120</y>
+      <width>421</width>
+      <height>80</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="topicLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>60</y>
+      <width>146</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>-40</x>
+      <y>30</y>
+      <width>511</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;楷体&quot;;
+color: rgb(255, 0, 70);</string>
+    </property>
+    <property name="text">
+     <string>                 学习长征精神，打造国际超一流喷灌机！</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qosLabel">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>62</y>
+      <width>64</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;楷体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>订阅级别:</string>
+    </property>
+    <property name="buddy">
+     <cstring>qosComboBox</cstring>
+    </property>
+   </widget>
+   <widget class="QLabel" name="topicLabel">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>62</y>
+      <width>79</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;楷体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>输入主机ID:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="qosComboBox">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>60</y>
+      <width>81</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;楷体&quot;;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>QOS0</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>QOS1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>QOS2</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="unsubButton">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>100</y>
+     <width>85</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;楷体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>退订</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="subButton">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>60</y>
+     <width>85</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;楷体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>订阅/查看</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>qosComboBox</tabstop>
+  <tabstop>unsubButton</tabstop>
+  <tabstop>listWidget</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>subButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SubForm</receiver>
+   <slot>onSubscribe()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>449</x>
+     <y>32</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>47</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>unsubButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SubForm</receiver>
+   <slot>onUnsubscribe()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>470</x>
+     <y>62</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>396</x>
+     <y>99</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>topicLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>SubForm</receiver>
+   <slot>onTopicInput(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>206</x>
+     <y>50</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>53</x>
+     <y>1</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onSubscribe()</slot>
+  <slot>onUnsubscribe()</slot>
+  <slot>onTopicInput(QString)</slot>
+ </slots>
+</ui>

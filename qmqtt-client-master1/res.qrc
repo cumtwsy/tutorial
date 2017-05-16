@@ -1,0 +1,62 @@
+<RCC>
+    <qresource prefix="/new/prefix">
+        <file>1.jpg</file>
+        <file>2.jpg</file>
+        <file>3.jpg</file>
+        <file>4.jpg</file>
+        <file>5.jpg</file>
+        <file>6.jpg</file>
+        <file>7.jpg</file>
+        <file>8.jpg</file>
+        <file>guanbi1.jpg</file>
+        <file>guanbi2.jpg</file>
+        <file>zuixiaohua1.jpg</file>
+        <file>zuixiaohua2.jpg</file>
+        <file>guanbi3.jpg</file>
+        <file>runshi1.ico</file>
+        <file>dingyue.png</file>
+        <file>guanyu.png</file>
+        <file>jiance.png</file>
+        <file>qingchu.png</file>
+        <file>qingchu1.png</file>
+        <file>tuichu.png</file>
+        <file>zhujiemian.png</file>
+        <file>kongzhi.png</file>
+        <file>dingyuejiemian2.png</file>
+        <file>jiancejiemian2.png</file>
+        <file>kongzhijiemian2.png</file>
+        <file>qingchu2.png</file>
+        <file>tuichu2.png</file>
+        <file>zhujiemian2.png</file>
+        <file>guanyu2.png</file>
+        <file>vedio1.jpg</file>
+        <file>vedio2.jpg</file>
+        <file>close.png</file>
+        <file>close2.png</file>
+        <file>minimize.png</file>
+        <file>minimize2.png</file>
+        <file>shanshui.jpg</file>
+        <file>title.jpg</file>
+        <file>groupbox.jpg</file>
+        <file>groupbox2.png</file>
+        <file>groupbox3.jpg</file>
+        <file>log2.jpg</file>
+        <file>min_3.png</file>
+        <file>min_2.png</file>
+        <file>close_3.png</file>
+        <file>close_2.png</file>
+        <file>close_1.png</file>
+        <file>vedio_3.png</file>
+        <file>vedio_2.png</file>
+        <file>vedio_1.png</file>
+        <file>min_1.png</file>
+    </qresource>
+    <qresource prefix="/ui">
+        <file>ui.qss</file>
+        <file>orange.qss</file>
+        <file>white.qss</file>
+    </qresource>
+    <qresource prefix="/new/prefix1">
+        <file>7.jpg</file>
+    </qresource>
+</RCC>
